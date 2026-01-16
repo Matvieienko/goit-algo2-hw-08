@@ -58,7 +58,7 @@ def update_with_cache(array, index, value):
         del cache.cache[key]
 
 
-# 4Генерація тестових даних
+# Генерація тестових даних
 def make_queries(n, q, hot_pool=30, p_hot=0.95, p_update=0.03):
     hot = [(random.randint(0, n//2), random.randint(n//2, n-1))
            for _ in range(hot_pool)]
